@@ -32,8 +32,9 @@ test:
     - doct
 
 about:
-  home: https://github.com/NSLS-II/document
+  home: https://github.com/NSLS-II/doct
   license: BSD 3-Clause
+  license_file: LICENSE
   summary: A read-only dottable dictionary
 
 extra:
