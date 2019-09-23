@@ -1,26 +1,24 @@
+{% set name = "doct" %}
 {% set version = "1.0.5" %}
+{% set sha256 = "f83b30e32feaf332f4c009582c63f772e9660040cdb7d6e5c3f9318811a8a5e0" %}
 
 package:
-  name: doct
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: http://github.com/NSLS-II/doct/archive/v{{ version }}.tar.gz
-  fn: doct-{{ version }}.tar.gz
-  sha256: f83b30e32feaf332f4c009582c63f772e9660040cdb7d6e5c3f9318811a8a5e0
+  url: http://github.com/NSLS-II/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-  number: 0
   noarch: python
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
   build:
     - python
-    - humanize
     - pip
-    - prettytable
-    - six
   run:
     - python
     - humanize
@@ -36,11 +34,3 @@ about:
   license: BSD 3-Clause
   license_file: LICENSE
   summary: A read-only dottable dictionary
-
-extra:
-  recipe-maintainers:
-    - ericdill
-    - CJ-Wright
-    - tacaswell
-    - licode
-    - danielballan

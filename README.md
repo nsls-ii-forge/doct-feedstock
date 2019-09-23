@@ -17,7 +17,7 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=&branchName=master">
+      <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=25&branchName=master">
         <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/doct-feedstock?branchName=master">
       </a>
     </td>
@@ -80,9 +80,4 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@CJ-Wright](https://github.com/CJ-Wright/)
-* [@danielballan](https://github.com/danielballan/)
-* [@ericdill](https://github.com/ericdill/)
-* [@licode](https://github.com/licode/)
-* [@tacaswell](https://github.com/tacaswell/)
 
