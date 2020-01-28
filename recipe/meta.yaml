@@ -1,6 +1,6 @@
 {% set name = "doct" %}
-{% set version = "1.0.5" %}
-{% set sha256 = "f83b30e32feaf332f4c009582c63f772e9660040cdb7d6e5c3f9318811a8a5e0" %}
+{% set version = "1.0.6" %}
+{% set sha256 = "743adc5944aa9073c7028a50c8493ad7c83faf90e93eabc862b5ffdb53227918" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
     - python
     - humanize
     - prettytable
-    - six 
+    - six
 
 test:
   imports:
